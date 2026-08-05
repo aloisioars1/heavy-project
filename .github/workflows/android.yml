@@ -34,6 +34,13 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew assembleRelease bundleRelease
 
+      - name: Firebase App Distribution
+        uses: w9jds/firebase-action@v2.2.1
+        with:
+          args: appdistribution:distribute app/build/outputs/apk/release/*.apk --app com.heavy.studio --testers "dev-team@example.com, qa@example.com" --release-notes "Nova versão automatizada via CI/CD"
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
