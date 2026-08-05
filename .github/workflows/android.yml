@@ -18,27 +18,33 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Set up Node.js 24
-        uses: actions/setup-node@v5
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
         with:
-          node-version: 24
+          gradle-version: 8.7
+
+      - name: Fix missing gradle-wrapper.jar
+        run: |
+          if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
+            echo "wrapper jar faltando, baixando..."
+            # pega o jar da versão que está no gradle-wrapper.properties
+            VER=$(grep distributionUrl gradle/wrapper/gradle-wrapper.properties | sed 's/.*gradle-\(.*\)-bin.zip/\1/')
+            echo "Versão detectada: $VER"
+            mkdir -p gradle/wrapper
+            curl -sL https://services.gradle.org/distributions/gradle-${VER}-bin.zip -o /tmp/gradle.zip
+            unzip -j /tmp/gradle.zip "gradle-${VER}/lib/plugins/gradle-wrapper-${VER}.jar" -d /tmp/
+            mv /tmp/gradle-wrapper-${VER}.jar gradle/wrapper/gradle-wrapper.jar
+            ls -lh gradle/wrapper/
+          fi
 
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
       - name: Build with Gradle
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: apk-debug
+          name: chiste-grego-apk
           path: app/build/outputs/apk/debug/app-debug.apk
-
-      - name: Upload AAB
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: aab-release
-          path: app/build/outputs/bundle/release/app-release.aab
-          if-no-files-found: ignore
