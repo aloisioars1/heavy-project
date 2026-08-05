@@ -1,20 +1,32 @@
-# Heavy Pro App
+# Curso de Grego 
 
-![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-iOS-3DDC84?style=for-the-badge&logo=apple&logoColor=white)
 ![Build Status](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 ![Package](https://img.shields.io/badge/Package-com.heavy.studio-informational?style=for-the-badge)
 
-> Aplicativo nativo Android de alto desempenho desenvolvido no Heavy Studio Pro IDE com suporte a CI/CD e compilação automatizada.
+> App,pra aprender grego 
 
 ---
 
 ## 📌 Visão Geral e Recursos Configurados
 
-Este repositório contém o código-fonte completo do **Heavy Pro App**, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
+Este repositório contém o código-fonte completo do **Curso de Grego **, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
 
 ### 🎨 Componentes da Interface de Usuário (Configurados na IDE)
-- **Interface Dinâmica**: Layout responsivo configurado via IDE Material Design.
+- **Barra de Progresso**: "Lição 3: Verbos no Presente" 
+- **SPACER**: "undefined" 
+- **TEXT**: "undefined" 
+- **TEXT**: "undefined" 
+- **SPACER**: "undefined" 
+- **Campo de Entrada**: "undefined" 
+- **SPACER**: "undefined" 
+- **TEXT**: "undefined" 
+- **Botão Interativo**: "A Palavra (Nominativo Singular)" *(Ação: `check_correct`)*
+- **Botão Interativo**: "Para a Palavra (Dativo)" *(Ação: `check_wrong`)*
+- **Botão Interativo**: "Das Palavras (Genitivo Plural)" *(Ação: `check_wrong`)*
+- **SPACER**: "undefined" 
+- **Interruptor (Switch)**: "Modo de Áudio (Pronúncia Erasmiana)" 
 
 ### 🧠 Recursos de Inteligência Artificial & API
 - **Modelo Gemini AI**: Integração com `gemini-3-flash-preview`
