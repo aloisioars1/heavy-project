@@ -20,28 +20,9 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: 8.7
 
-      - name: Fix missing gradle-wrapper.jar
-        run: |
-          if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
-            echo "wrapper jar faltando, baixando..."
-            # pega o jar da versão que está no gradle-wrapper.properties
-            VER=$(grep distributionUrl gradle/wrapper/gradle-wrapper.properties | sed 's/.*gradle-\(.*\)-bin.zip/\1/')
-            echo "Versão detectada: $VER"
-            mkdir -p gradle/wrapper
-            curl -sL https://services.gradle.org/distributions/gradle-${VER}-bin.zip -o /tmp/gradle.zip
-            unzip -j /tmp/gradle.zip "gradle-${VER}/lib/plugins/gradle-wrapper-${VER}.jar" -d /tmp/
-            mv /tmp/gradle-wrapper-${VER}.jar gradle/wrapper/gradle-wrapper.jar
-            ls -lh gradle/wrapper/
-          fi
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
-
-      - name: Build with Gradle
-        run: ./gradlew assembleDebug --stacktrace
+      - name: Build with Gradle Direct
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
