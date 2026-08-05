@@ -1,4 +1,4 @@
-name: Android CI/CD Pipeline
+name: Android CI/CD
 
 on:
   push:
@@ -8,8 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
@@ -17,24 +18,16 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: gradle
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: 8.7
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
 
-      - name: Generate Gradle Wrapper (se não existir)
-        run: |
-          if [ ! -f gradlew ]; then
-            gradle wrapper --gradle-version 8.7
-          fi
-          chmod +x gradlew
-
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+      - name: Build with Gradle
+        run: ./gradlew assembleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: heavy-pro-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          name: app-release
+          path: app/build/outputs/apk/release/*.apk
