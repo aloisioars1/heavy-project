@@ -1,6 +1,6 @@
 # Chiste Grego
 
-![Platform](https://img.shields.io/badge/Platform-iOS-3DDC84?style=for-the-badge&logo=apple&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Build Status](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 ![Package](https://img.shields.io/badge/Package-com.heavy.studio-informational?style=for-the-badge)
