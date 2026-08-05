@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
-        findViewById<TextView>(R.id.txtAppName).text = "Heavy Pro App"
+        findViewById<TextView>(R.id.txtAppName).text = "Curso de Grego "
 
         recyclerViewChat = findViewById(R.id.recyclerViewChat)
         editTextMessage = findViewById(R.id.editTextMessage)

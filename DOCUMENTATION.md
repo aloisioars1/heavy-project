@@ -1,4 +1,4 @@
-# 📘 Documentação Técnica do Código Kotlin - Heavy Pro App
+# 📘 Documentação Técnica do Código Kotlin - Curso de Grego 
 
 > **Pacote Raiz**: `com.heavy.studio`  
 > **Gerado por**: Heavy Studio PRO IDE & Kotlin Code Analyzer  
@@ -9,7 +9,7 @@
 
 ## 📌 1. Visão Geral da Arquitetura e Estrutura
 
-Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Heavy Pro App**.
+Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Curso de Grego **.
 
 ### 🏛️ Padrão Arquitetural
 - **Padrão**: Activity-View Controller com suporte a Corrotinas Kotlin (`kotlinx.coroutines`) e ciclo de vida AndroidX.
@@ -159,4 +159,4 @@ Para compilar e validar estes métodos Kotlin localmente via terminal Gradle:
 
 ---
 
-*Documentação gerada automaticamente para o repositório **Heavy Pro App**.*
+*Documentação gerada automaticamente para o repositório **Curso de Grego **.*

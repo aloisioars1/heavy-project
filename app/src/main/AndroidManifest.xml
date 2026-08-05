@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:label="Heavy Pro App"
+        android:label="Curso de Grego "
         android:supportsRtl="true"
         android:theme="@style/Theme.MeuApp"
         tools:targetApi="31">
