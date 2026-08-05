@@ -1,4 +1,4 @@
-# Curso de Grego 
+# Chiste Grego
 
 ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Build Status](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
@@ -11,22 +11,14 @@
 
 ## 📌 Visão Geral e Recursos Configurados
 
-Este repositório contém o código-fonte completo do **Curso de Grego **, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
+Este repositório contém o código-fonte completo do **Chiste Grego**, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
 
 ### 🎨 Componentes da Interface de Usuário (Configurados na IDE)
-- **Barra de Progresso**: "Lição 3: Verbos no Presente" 
-- **SPACER**: "undefined" 
 - **TEXT**: "undefined" 
-- **TEXT**: "undefined" 
+- **Barra de Progresso**: "Progresso de Memorização" 
+- **Botão Interativo**: "Iniciar Revisão Diária" *(Ação: `start_review`)*
 - **SPACER**: "undefined" 
-- **Campo de Entrada**: "undefined" 
-- **SPACER**: "undefined" 
-- **TEXT**: "undefined" 
-- **Botão Interativo**: "A Palavra (Nominativo Singular)" *(Ação: `check_correct`)*
-- **Botão Interativo**: "Para a Palavra (Dativo)" *(Ação: `check_wrong`)*
-- **Botão Interativo**: "Das Palavras (Genitivo Plural)" *(Ação: `check_wrong`)*
-- **SPACER**: "undefined" 
-- **Interruptor (Switch)**: "Modo de Áudio (Pronúncia Erasmiana)" 
+- **Interruptor (Switch)**: "Áudio Automático" 
 
 ### 🧠 Recursos de Inteligência Artificial & API
 - **Modelo Gemini AI**: Integração com `gemini-3-flash-preview`
