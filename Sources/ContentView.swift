@@ -9,13 +9,13 @@ struct Message: Identifiable {
 struct ContentView: View {
     @State private var messageText: String = ""
     @State private var messages: [Message] = [
-        Message(text: "Olá! Bem-vindo ao Curso de Grego .", isUser: false)
+        Message(text: "Olá! Bem-vindo ao Chiste Grego.", isUser: false)
     ]
     
     var body: some View {
         VStack {
             HStack {
-                Text("Curso de Grego ")
+                Text("Chiste Grego")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Spacer()

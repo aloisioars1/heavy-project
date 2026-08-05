@@ -2,16 +2,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "CursodeGrego",
+    name: "ChisteGrego",
     platforms: [
         .iOS(.v15)
     ],
     products: [
-        .executable(name: "CursodeGrego", targets: ["CursodeGrego"])
+        .executable(name: "ChisteGrego", targets: ["ChisteGrego"])
     ],
     targets: [
         .executableTarget(
-            name: "CursodeGrego",
+            name: "ChisteGrego",
             path: "Sources"
         )
     ]
