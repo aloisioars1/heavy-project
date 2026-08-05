@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ACTIONS_RUNNER_FORCED_NODE_VERSION: node24
+      NODE_OPTIONS: --env-node-24
 
     steps:
       - name: Checkout Code
