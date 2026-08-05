@@ -5,11 +5,12 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+env:
+  NODE_OPTIONS: --env-node-24
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      NODE_OPTIONS: --env-node-24
 
     steps:
       - name: Checkout Code
