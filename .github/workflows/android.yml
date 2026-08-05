@@ -21,7 +21,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
+          cache: 'gradle'
 
       - name: Set up Node.js 24
         uses: actions/setup-node@v4
