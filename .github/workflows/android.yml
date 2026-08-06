@@ -1,5 +1,4 @@
 name: Android CI/CD
-
 on:
   push:
     branches: [ "main" ]
@@ -8,36 +7,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v5
+      - uses: actions/checkout@v5
 
       - name: Remove wrapper corrompido
-        run: rm -f gradle/wrapper/gradle-wrapper.jar
+        run: rm -rf gradle/wrapper/gradle-wrapper.jar
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v5
+      - uses: actions/setup-java@v5
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Gradle 8.7
-        uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 8.7
 
-      - name: Build Release
-        run: gradle assembleRelease bundleRelease
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-release-apk
-          path: app/build/outputs/apk/release/*.apk
-
-      - name: Upload AAB
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-release-aab
-          path: app/build/outputs/bundle/release/*.aab
+      - name: Build Debug
+        run: gradle assembleDebug --stacktrace
