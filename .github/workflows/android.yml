@@ -18,21 +18,14 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'gradle'
 
-      - name: Set up Node.js 24
-        uses: actions/setup-node@v4
+      - name: Setup Gradle 8.7
+        uses: gradle/actions/setup-gradle@v4
         with:
-          node-version: '24'
+          gradle-version: 8.7
 
-      - name: Grant execute permission for gradlew
-        run: |
-          chmod +x gradlew
-          chmod -R +x gradle/
-          chmod +x gradle/wrapper/gradle-wrapper.jar
-
-      - name: Build with Gradle
-        run: ./gradlew assembleRelease bundleRelease
+      - name: Build with Gradle (sem wrapper)
+        run: gradle assembleRelease bundleRelease
 
       - name: Firebase App Distribution
         uses: w9jds/firebase-action@v13.35.1
