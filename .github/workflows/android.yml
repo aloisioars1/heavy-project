@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v5  # v4 quebrou com Node 24, v5 já é compatível
+        uses: actions/checkout@v5
 
       - name: Set up JDK 17
         uses: actions/setup-java@v5
@@ -26,13 +26,16 @@ jobs:
           node-version: '24'
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: |
+          chmod +x gradlew
+          chmod -R +x gradle/
+          chmod +x gradle/wrapper/gradle-wrapper.jar
 
       - name: Build with Gradle
         run: ./gradlew assembleRelease bundleRelease
 
       - name: Firebase App Distribution
-        uses: w9jds/firebase-action@v13.35.1  # v2.2.1 é de Node 20 e foi descontinuada
+        uses: w9jds/firebase-action@v13.35.1
         with:
           args: appdistribution:distribute app/build/outputs/apk/release/*.apk --app com.heavy.studio --testers "dev-team@example.com, qa@example.com" --release-notes "Nova versão automatizada via CI/CD"
         env:
