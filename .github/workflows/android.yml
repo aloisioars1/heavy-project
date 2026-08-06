@@ -13,6 +13,9 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v5
 
+      - name: Remove wrapper corrompido
+        run: rm -f gradle/wrapper/gradle-wrapper.jar
+
       - name: Set up JDK 17
         uses: actions/setup-java@v5
         with:
@@ -24,15 +27,8 @@ jobs:
         with:
           gradle-version: 8.7
 
-      - name: Build with Gradle (sem wrapper)
+      - name: Build Release
         run: gradle assembleRelease bundleRelease
-
-      - name: Firebase App Distribution
-        uses: w9jds/firebase-action@v13.35.1
-        with:
-          args: appdistribution:distribute app/build/outputs/apk/release/*.apk --app com.heavy.studio --testers "dev-team@example.com, qa@example.com" --release-notes "Nova versão automatizada via CI/CD"
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
