@@ -1,15 +1,15 @@
-# 📘 Documentação Técnica do Código Kotlin - Chiste Grego
+# 📘 Documentação Técnica do Código Kotlin - Heavy Pro App
 
 > **Pacote Raiz**: `com.heavy.studio`  
 > **Gerado por**: Heavy Studio PRO IDE & Kotlin Code Analyzer  
-> **Data de Análise**: 05 de agosto de 2026  
+> **Data de Análise**: 07 de agosto de 2026  
 > **Plataforma Target**: Android SDK (API 24+)  
 
 ---
 
 ## 📌 1. Visão Geral da Arquitetura e Estrutura
 
-Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Chiste Grego**.
+Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Heavy Pro App**.
 
 ### 🏛️ Padrão Arquitetural
 - **Padrão**: Activity-View Controller com suporte a Corrotinas Kotlin (`kotlinx.coroutines`) e ciclo de vida AndroidX.
@@ -22,7 +22,10 @@ Esta documentação foi gerada automaticamente através do analisador sintático
 
 Abaixo estão os módulos e bibliotecas utilizadas no código Kotlin:
 
-### 🤖 AndroidX & Sistema Android (14 imports)
+### 🤖 AndroidX & Sistema Android (21 imports)
+- `android.content.ClipData`
+- `android.content.ClipboardManager`
+- `android.content.SharedPreferences`
 - `android.os.Bundle`
 - `android.os.Handler`
 - `android.os.Looper`
@@ -32,11 +35,15 @@ Abaixo estão os módulos e bibliotecas utilizadas no código Kotlin:
 - `android.widget.Button`
 - `android.widget.EditText`
 - `android.widget.TextView`
+- `android.widget.Toast`
 - `androidx.appcompat.app.AppCompatActivity`
+- `androidx.appcompat.app.AppCompatDelegate`
 - `androidx.constraintlayout.widget.ConstraintLayout`
 - `androidx.core.content.ContextCompat`
 - `androidx.recyclerview.widget.LinearLayoutManager`
 - `androidx.recyclerview.widget.RecyclerView`
+- `androidx.security.crypto.EncryptedSharedPreferences`
+- `androidx.security.crypto.MasterKey`
 
 ### 🧠 Google & Inteligência Artificial (1 imports)
 - `com.google.android.material.card.MaterialCardView`
@@ -73,11 +80,18 @@ Abaixo estão os módulos e bibliotecas utilizadas no código Kotlin:
 | `textViewSender` | `private` | `TextView` | `itemView.findViewById(R.id.textViewSender)` |
 
 
-#### 🛠️ Métodos e Funções (6)
+#### 🛠️ Métodos e Funções (13)
 
 | Método / Função | Modificadores | Parâmetros | Retorno | Descrição e Finalidade |
 | :--- | :--- | :--- | :--- | :--- |
 | `onCreate` | `override` | `savedInstanceState: Bundle?` | `Unit` | Callback do ciclo de vida Android. Inicializa a Activity, infla o layout XML (`activity_main.xml`), ligações de visualização (View Binding/FindView) e configura ouvintes de eventos. |
+| `getEncryptedPreferences` | `private` | *Nenhum* | `SharedPreferences` | Método auxiliar de lógica de negócios e estado da aplicação. |
+| `saveGithubTokenSecured` | `public` | `token: String` | `Unit` | Método auxiliar de lógica de negócios e estado da aplicação. |
+| `getGithubTokenSecured` | `public` | *Nenhum* | `String?` | Método auxiliar de lógica de negócios e estado da aplicação. |
+| `initFinancialModules` | `private` | *Nenhum* | `Unit` | Método auxiliar de lógica de negócios e estado da aplicação. |
+| `copyPixKeyToClipboard` | `public` | `pixKey: String = "00020126360014BR.GOV.BCB.PIX0114+5511999999999520400005303986540510.005802BR5915Heavy Financeiro6009SAO PAULO62070503***6304E2CA"` | `Unit` | Método auxiliar de lógica de negócios e estado da aplicação. |
+| `exportTransactionsToCsv` | `public` | *Nenhum* | `String` | Método auxiliar de lógica de negócios e estado da aplicação. |
+| `toggleAppTheme` | `public` | *Nenhum* | `Unit` | Método auxiliar de lógica de negócios e estado da aplicação. |
 | `setupChat` | `private` | *Nenhum* | `Unit` | Inicializa os componentes visuais da tela, escutadores de cliques e bindings de dados. |
 | `onCreateViewHolder` | `override` | `parent: ViewGroup`<br/>`viewType: Int` | `MessageViewHolder` | Método auxiliar de lógica de negócios e estado da aplicação. |
 | `onBindViewHolder` | `override` | `holder: MessageViewHolder`<br/>`position: Int` | `Unit` | Método auxiliar de lógica de negócios e estado da aplicação. |
@@ -159,4 +173,4 @@ Para compilar e validar estes métodos Kotlin localmente via terminal Gradle:
 
 ---
 
-*Documentação gerada automaticamente para o repositório **Chiste Grego**.*
+*Documentação gerada automaticamente para o repositório **Heavy Pro App**.*
