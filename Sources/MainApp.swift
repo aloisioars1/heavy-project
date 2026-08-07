@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ChisteGregoApp: App {
+struct HeavyProAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
