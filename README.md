@@ -1,27 +1,23 @@
-# Chiste Grego
+# Heavy Pro App
 
-![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-iOS-3DDC84?style=for-the-badge&logo=apple&logoColor=white)
 ![Build Status](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 ![Package](https://img.shields.io/badge/Package-com.heavy.studio-informational?style=for-the-badge)
 
-> App,pra aprender grego 
+> Aplicativo nativo iOS de alto desempenho desenvolvido no Heavy Studio Pro IDE com suporte a CI/CD e compilação automatizada.
 
 ---
 
 ## 📌 Visão Geral e Recursos Configurados
 
-Este repositório contém o código-fonte completo do **Chiste Grego**, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
+Este repositório contém o código-fonte completo do **Heavy Pro App**, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
 
 ### 🎨 Componentes da Interface de Usuário (Configurados na IDE)
-- **TEXT**: "undefined" 
-- **Barra de Progresso**: "Progresso de Memorização" 
-- **Botão Interativo**: "Iniciar Revisão Diária" *(Ação: `start_review`)*
-- **SPACER**: "undefined" 
-- **Interruptor (Switch)**: "Áudio Automático" 
+- **Interface Dinâmica**: Layout responsivo configurado via IDE Material Design.
 
 ### 🧠 Recursos de Inteligência Artificial & API
-- **Modelo Gemini AI**: Integração com `gemini-3-flash-preview`
+- **Modelo Gemini AI**: Integração com `gemini-3-pro-preview`
 - **Pesquisa em Tempo Real**: ✅ Habilitada (Google Search Grounding)
 - **Thinking Budget**: 16384 tokens
 - **Instruções do Sistema**: Personalizadas na IDE
@@ -69,7 +65,7 @@ Este repositório contém o código-fonte completo do **Chiste Grego**, configur
 ### Passo a Passo
 1. **Clonar o Repositório**:
    ```bash
-   git clone https://github.com/aloisioars1 /heavy-project.git
+   git clone https://github.com/aloisioars1/heavy-project.git
    cd heavy-project
    ```
 
