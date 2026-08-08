@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     private val isDarkTheme: Boolean = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
