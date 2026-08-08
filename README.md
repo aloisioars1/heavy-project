@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 ![Package](https://img.shields.io/badge/Package-com.heavy.studio-informational?style=for-the-badge)
 
-> Aplicativo nativo Android de alto desempenho desenvolvido no Heavy Studio Pro IDE com suporte a CI/CD e compilação automatizada.
+> Crie um app pra aprender grego koine igual o duolingo usando o mesmo tipo de aprendizado. 
 
 ---
 
