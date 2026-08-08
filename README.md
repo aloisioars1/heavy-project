@@ -17,7 +17,7 @@ Este repositório contém o código-fonte completo do **Heavy Pro App**, configu
 - **Interface Dinâmica**: Layout responsivo configurado via IDE Material Design.
 
 ### 🧠 Recursos de Inteligência Artificial & API
-- **Modelo Gemini AI**: Integração com `gemini-3-pro-preview`
+- **Modelo Gemini AI**: Integração com `gemini-2.0-flash`
 - **Pesquisa em Tempo Real**: ✅ Habilitada (Google Search Grounding)
 - **Thinking Budget**: 16384 tokens
 - **Instruções do Sistema**: Personalizadas na IDE
