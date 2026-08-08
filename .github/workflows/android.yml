@@ -70,7 +70,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Decode Release Keystore (App Signing)
-        if: ${{ env.KEYSTORE_BASE64 != '' }}
+        if: env.KEYSTORE_BASE64 != ''
         run: |
           mkdir -p app
           echo "$KEYSTORE_BASE64" | base64 --decode > app/release.keystore
@@ -111,7 +111,7 @@ jobs:
           node-version: '20'
 
       - name: Deploy AAB to Firebase App Distribution
-        if: ${{ env.FIREBASE_APP_ID != '' && env.FIREBASE_TOKEN != '' }}
+        if: env.FIREBASE_APP_ID != '' && env.FIREBASE_TOKEN != ''
         run: |
           npm install -g firebase-tools
           firebase appdistribution:distribute app/build/outputs/bundle/release/app-release.aab --app "$FIREBASE_APP_ID" --testers "dev-team@example.com, qa@example.com" --release-notes "Nova versão automatizada via CI/CD"
