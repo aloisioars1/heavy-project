@@ -1,4 +1,4 @@
-# 📘 Documentação Técnica do Código Kotlin - Control Tower Mobile
+# 📘 Documentação Técnica do Código Kotlin - Tool box Mobile
 
 > **Pacote Raiz**: `com.elite.mobile.architect`  
 > **Gerado por**: Heavy Studio PRO IDE & Kotlin Code Analyzer  
@@ -9,7 +9,7 @@
 
 ## 📌 1. Visão Geral da Arquitetura e Estrutura
 
-Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Control Tower Mobile**.
+Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Tool box Mobile**.
 
 ### 🏛️ Padrão Arquitetural
 - **Padrão**: Activity-View Controller com suporte a Corrotinas Kotlin (`kotlinx.coroutines`) e ciclo de vida AndroidX.
@@ -173,4 +173,4 @@ Para compilar e validar estes métodos Kotlin localmente via terminal Gradle:
 
 ---
 
-*Documentação gerada automaticamente para o repositório **Control Tower Mobile**.*
+*Documentação gerada automaticamente para o repositório **Tool box Mobile**.*
