@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
-        findViewById<TextView>(R.id.txtAppName).text = "Control Tower Mobile"
+        findViewById<TextView>(R.id.txtAppName).text = "Tool box Mobile"
 
         recyclerViewChat = findViewById(R.id.recyclerViewChat)
         editTextMessage = findViewById(R.id.editTextMessage)
