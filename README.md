@@ -1,17 +1,17 @@
-# Heavy Pro App
+# Control Tower Mobile
 
 ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Build Status](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
-![Package](https://img.shields.io/badge/Package-com.heavy.studio-informational?style=for-the-badge)
+![Package](https://img.shields.io/badge/Package-com.elite.mobile.architect-informational?style=for-the-badge)
 
-> Crie um app pra aprender grego koine igual o duolingo usando o mesmo tipo de aprendizado. 
+> Pra assistência de celular
 
 ---
 
 ## 📌 Visão Geral e Recursos Configurados
 
-Este repositório contém o código-fonte completo do **Heavy Pro App**, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
+Este repositório contém o código-fonte completo do **Control Tower Mobile**, configurado e exportado via **Heavy Studio Pro IDE**. O projeto foi estruturado seguindo as melhores práticas de arquitetura Android/iOS, prontos para compilação automatizada via **GitHub Actions** e distribuição para testadores no **Firebase Console**.
 
 ### 🎨 Componentes da Interface de Usuário (Configurados na IDE)
 - **Interface Dinâmica**: Layout responsivo configurado via IDE Material Design.
@@ -40,7 +40,7 @@ Este repositório contém o código-fonte completo do **Heavy Pro App**, configu
 ├── app/
 │   ├── src/
 │   │   └── main/
-│   │       ├── java/com/heavy/studio/
+│   │       ├── java/com/elite/mobile/architect/
 │   │       │   └── MainActivity.kt # Código Principal da Aplicação
 │   │       ├── res/
 │   │       │   ├── layout/         # Telas XML (activity_main.xml, item_message.xml)
