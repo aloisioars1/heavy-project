@@ -1,15 +1,15 @@
-# 📘 Documentação Técnica do Código Kotlin - Heavy Pro App
+# 📘 Documentação Técnica do Código Kotlin - Control Tower Mobile
 
-> **Pacote Raiz**: `com.heavy.studio`  
+> **Pacote Raiz**: `com.elite.mobile.architect`  
 > **Gerado por**: Heavy Studio PRO IDE & Kotlin Code Analyzer  
-> **Data de Análise**: 08 de agosto de 2026  
+> **Data de Análise**: 09 de agosto de 2026  
 > **Plataforma Target**: Android SDK (API 24+)  
 
 ---
 
 ## 📌 1. Visão Geral da Arquitetura e Estrutura
 
-Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Heavy Pro App**.
+Esta documentação foi gerada automaticamente através do analisador sintático de código Kotlin da IDE. Ela mapeia detalhadamente todas as **classes**, **interfaces**, **propriedades** e **métodos de controle** que compõem o núcleo do aplicativo **Control Tower Mobile**.
 
 ### 🏛️ Padrão Arquitetural
 - **Padrão**: Activity-View Controller com suporte a Corrotinas Kotlin (`kotlinx.coroutines`) e ciclo de vida AndroidX.
@@ -71,7 +71,7 @@ Abaixo estão os módulos e bibliotecas utilizadas no código Kotlin:
 | `editTextMessage` | `private` | `EditText` | *Não inicializado* |
 | `buttonSend` | `private` | `Button` | *Não inicializado* |
 | `chatAdapter` | `private` | `ChatAdapter` | *Não inicializado* |
-| `isDarkTheme` | `private` | `Boolean` | `true` |
+| `isDarkTheme` | `private` | `Boolean` | `false` |
 | `sender` | `public` | `String,` | *Não inicializado* |
 | `text` | `public` | `String)` | *Não inicializado* |
 | `messages` | `private` | `MutableList<Message>)` | *Não inicializado* |
@@ -173,4 +173,4 @@ Para compilar e validar estes métodos Kotlin localmente via terminal Gradle:
 
 ---
 
-*Documentação gerada automaticamente para o repositório **Heavy Pro App**.*
+*Documentação gerada automaticamente para o repositório **Control Tower Mobile**.*
